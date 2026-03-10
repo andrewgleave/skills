@@ -1,40 +1,42 @@
-# Writing for Interfaces
+# Writing for Interfaces Skill
 
-A Claude Code skill for writing clear, purposeful interface copy for buttons, labels, errors, alerts, notifications, onboarding flows, empty states, tooltips, accessibility text, and any other text a person encounters when using a digital product.
+## Install
 
-Based on Apple's Human Interface Guidelines and principles for writing in interfaces and distilled from WWDC sessions on how to write for interfaces.
-
-## What it does
-
-The skill provides structured guidance for writing and reviewing user-facing copy across any digital interface such as apps, web, CLI, conversational AI, or email. It covers:
-
-- **Core principles**: purpose, anticipation, context, and empathy
-- **Voice and tone**: establishing a product voice and adapting tone to context
-- **Writing craft**: removing filler, avoiding repetition, being specific, maintaining consistency
-- **Pattern-specific guidance**: alerts, errors, destructive actions, empty states, onboarding, notifications, accessibility labels, buttons, and instructional copy
-
-The skill also helps users define their product's voice if one hasn't been established, then uses it as a lens for all subsequent copy.
-
-## Installation
-
-Copy the `writing-for-interfaces` directory to your Claude Code skills folder:
-
-```
-cp -r writing-for-interfaces ~/.claude/skills/
+```bash
+npx skills add andrewgleave/skills --skill writing-for-interfaces --global
 ```
 
-## Structure
+## Example Prompt
 
+```text
+/writing-for-interfaces Rewrite these onboarding, empty state, and error messages for a budgeting app
 ```
+
+## Skill Structure
+
+This repository follows the **Agent Skills** open standard. Each skill is self-contained with its own logic, workflow, and reference materials.
+
+```text
 writing-for-interfaces/
-├── SKILL.md              # Core principles, writing craft, voice & tone
-└── references/
-    └── patterns.md       # Detailed guidance for 9 common interface patterns
+├── SKILL.md              — Core instructions, principles, and voice/tone guidance
+├── references/
+│   └── patterns.md       — Detailed guidance for common interface patterns
+└── README.md             — This file
 ```
+
+## How it Works
+
+When activated, the agent applies a structured interface-writing workflow:
+
+1. **Read**: Review the relevant screens, flows, or copy the user wants to write or improve.
+2. **Check voice**: Look for an existing product voice or help define one if none exists.
+3. **Match patterns**: Identify the relevant UI patterns such as errors, alerts, onboarding, or empty states.
+4. **Rewrite**: Provide concrete rewrites inline, prioritizing clarity and user progress over polish.
+5. **Align**: Flag terminology drift and suggest consistent word choices across the interface.
 
 ## Sources
 
-The principles in this skill have been distilled from Apple's WWDC sessions on writing for interfaces and generalised to apply to any interface:
+The principles in this skill are distilled from Apple's interface writing guidance and generalized for product interfaces more broadly:
 
 - [**WWDC 2017** — Writing Great Alerts](https://developer.apple.com/videos/play/wwdc2017/813/)
 - [**WWDC 2019** — Writing Great Accessibility Labels](https://developer.apple.com/videos/play/wwdc2019/254/)
