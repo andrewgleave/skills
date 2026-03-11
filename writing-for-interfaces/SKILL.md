@@ -238,10 +238,10 @@ the voice and tone are right.
 Interface text has no minimum word count. Every word must earn its place.
 
 - **Adverbs and adjectives**: "Simply enter your license plate" → "Enter your license
-  plate." Words like "simply," "quickly," "easily," "just" promise something about the
-  person's experience that you can't guarantee. However, a descriptive word that genuinely
-  clarifies behaviour earns its place: "Feed your pets automatically" tells you something
-  "Feed your pets" doesn't. The test: does the word add meaning, or is it filler?
+  plate." Words like "simply," "quickly," "easily," "just", "yet", "successfully", "soon" promise
+  something about the person's experience that you can't guarantee. However, a descriptive word
+  that genuinely clarifies behaviour earns its place: "Feed your pets automatically" tells you something
+  "Feed your pets" doesn't. The test: does the word add meaning in this context, or is it filler?
 - **Interjections**: "Uh oh!", "Oops!", "Oh no!" in error messages can sound like you're
   not taking the problem seriously. Cut them.
 - **Pleasantries**: "Sorry" and "please" can sound insincere in automated messages. Use
