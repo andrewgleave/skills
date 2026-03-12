@@ -99,11 +99,16 @@ For every piece of copy, work in this order:
    aloud, would you recognise it as coming from this product?
 2. **Which qualities need dialing up or down for this situation?** Think of each voice
    quality as a dial. A celebratory moment turns up warmth; an error turns up clarity.
-   No quality should ever be fully off — you never want to be unclear, or unhelpful, or
-   cold. It's about emphasis.
 3. **Apply the core principles** (purpose, anticipation, context, empathy — detailed below).
-4. **Apply the craft rules** (remove filler, avoid repetition, be specific, lead with the
-   why — detailed below).
+4. **Apply the craft rules** (remove filler, avoid repetition, be specific — detailed
+   below).
+
+The ordering here is deliberate and encodes a precedence chain: **clarity > voice >
+craft rules.** Clarity always wins — if voice gets in the way of someone understanding
+what to do, strip it back. Voice comes next — it shapes how things sound, and a craft
+rule should never cut a word or restructure a phrase in a way that undermines the
+established voice. Craft rules are voice-filtered heuristics, not absolutes. Always
+cross-check craft edits against the voice before committing them.
 
 When reviewing copy across multiple screens or files, flag terminology inconsistencies and
 suggest word list entries for new, missing or ambiguous terms.
@@ -131,26 +136,20 @@ can turn up or down depending on the moment:
 - Onboarding a new user? Balance helpfulness with warmth.
 - Confirming a destructive action? Turn up direct, keep calm and concise.
 
-No quality should ever be turned all the way off.
+### Applying tone in practice
 
-### Applying tone: a practical method
-
-1. Pick the 3–4 qualities that define the voice.
-2. For the specific situation, decide which qualities need emphasis.
-3. Place each quality on a spectrum from low to high emphasis.
-4. Write with that balance.
+For each situation, decide which voice qualities need emphasis and which should recede.
 
 **Example**: For an error where someone can't connect to the network, clarity and
-helpfulness go way up — the person needs to know exactly what to do. Simplicity stays
-moderate because they need the most important details. Friendliness dials back because getting them
-unstuck is more important than sounding warm.
+helpfulness go way up. Simplicity stays moderate because they need the most important
+details. Friendliness dials back because getting them unstuck matters more than sounding
+warm.
 
-### Voice should never override usefulness
+### Where personality belongs
 
-Personality shines in moments where it can — welcome screens, milestones, empty states.
-Don't force it into error messages or critical flows. If voice gets in the way of clarity,
-clarity wins every time. This is especially true for error messages, destructive actions and
-situations where the writing is articulating a problem.
+Personality shines in moments where there's room for it — welcome screens, milestones,
+empty states. In error messages, destructive actions, and critical flows, dial voice back
+and let clarity lead. The precedence chain from Step 3 applies: clarity first, always.
 
 ---
 
@@ -186,9 +185,10 @@ and forth — listening, responding, anticipating what the other person needs to
 - After telling someone about a problem, tell them how to fix it.
 - After asking someone to do something, make it obvious how to do it.
 - After someone completes something, acknowledge it and point forward.
-- **Lead with the "why".** Put the benefit or reason before the instruction. "To get
-  reservation updates, enter your phone number" is stronger than the reverse — the benefit
-  is front-loaded where it has the most impact.
+- **Lead with the "why".** Put the benefit or reason before the instruction. Structure
+  as: "To [benefit], [instruction]." "To get reservation updates, enter your phone number"
+  and "To keep your streak, solve today's crossword" both beat the reverse — front-loading
+  the motivation makes the instruction feel like a reasonable ask instead of a demand.
 
 ### 3. Context
 
@@ -235,21 +235,35 @@ the voice and tone are right.
 
 ### Remove filler words
 
-Interface text has no minimum word count. Every word must earn its place.
+Interface text has no minimum word count. Every word must earn its place. But before cutting
+a word, check whether it's doing voice work. A word that's "filler" by general craft rules
+may be load-bearing for the voice — "yet" in "Nothing here yet" carries warmth and calm in
+a product whose voice values those qualities, and removing it makes the empty state blunter.
+The test isn't just "does the meaning change?" but also "does the tone change, and is that
+tone intentional?"
 
 - **Adverbs and adjectives**: "Simply enter your license plate" → "Enter your license
-  plate." Words like "simply," "quickly," "easily," "just", "yet", "successfully", "soon" promise
-  something about the person's experience that you can't guarantee. However, a descriptive word
-  that genuinely clarifies behaviour earns its place: "Feed your pets automatically" tells you something
-  "Feed your pets" doesn't. The test: does the word add meaning in this context, or is it filler?
+  plate." Words like "simply," "quickly," "easily," "just", "successfully", "soon" often promise
+  something about the person's experience that you can't guarantee. However, a word
+  that genuinely clarifies behaviour or carries intentional tone earns its place: "Feed your
+  pets automatically" tells you something "Feed your pets" doesn't, and a softening word like
+  "yet" may serve the voice even though it adds no literal meaning. The test: does the word
+  add meaning or intentional tone in this context, or is it filler?
 - **Interjections**: "Uh oh!", "Oops!", "Oh no!" in error messages can sound like you're
   not taking the problem seriously. Cut them.
 - **Pleasantries**: "Sorry" and "please" can sound insincere in automated messages. Use
   them only when they genuinely add warmth, not as padding.
-- **Unnecessary punctuation**: Exclamation marks should be rare. If everything is exciting,
-  nothing is. Reserve them for genuinely celebratory moments.
+- **Unnecessary punctuation**:
+  - **Exclamation marks** should be rare. Reserve them for genuinely celebratory moments.
+  - **Hyphens and dashes** (en dash, em dash) are almost never appropriate in interface
+    copy. They add visual clutter and interrupt scanning. If you're tempted to use a dash
+    to set off a phrase or important information, break it into a separate line or sentence
+    instead. Interface text should be scannable.
+  - **Ellipsis** should only be used to indicate a process in progress or continuation
+    (e.g., "Loading..." or "Searching..."), not as a trailing thought or for effect.
 
-**The test**: read the sentence without the word. If the meaning is unchanged, remove it.
+**The test**: read the sentence without the word. If neither the meaning nor the
+intentional tone changes, remove it.
 
 ### Avoid repetition
 
@@ -269,17 +283,6 @@ on screen should add new information.
 - Give real information: "Your card ending in 4242 was declined" not "There was a payment
   error."
 
-### Lead with the why
-
-Messaging is most effective when you tell people why the next step matters before telling
-them what it is. Structure as: "To [benefit], [instruction]."
-
-- "To keep your streak, solve today's crossword" beats the reverse.
-- "To get reservation updates, enter your phone number" beats the reverse.
-
-This small reordering front-loads the motivation and makes the instruction feel like a
-reasonable ask instead of a demand.
-
 ### Keep a word list
 
 Decide what you call things and stick to it. If you call it an "alias" on one screen, don't
@@ -291,7 +294,7 @@ are especially good word list entries — if "Next" advances through a flow, use
 everywhere, not "Continue" on one screen and "Proceed" on another.
 
 Start small. Add a word at a time. As the list grows, it becomes a resource that defines how
-the product sounds. The list should be exist as part of the product's documentation and
+the product sounds. The list should exist as part of the product's documentation and
 updated as the product evolves.
 
 ### Use possessive pronouns sparingly
@@ -327,8 +330,8 @@ they end ("Done"). Return to these patterns every time.
 ## The simplest test
 
 Read your writing out loud. If it sounds like how you'd explain something to a friend —
-clear, natural, no filler — it's probably good. If it sounds like a robot, verbose, inconsistant, a legal
-document, or an essay, keep editing.
+clear, natural, no filler — it's probably good. If it sounds like a robot, verbose, inconsistent, a legal
+document, or an essay, keep refining.
 
 ---
 
