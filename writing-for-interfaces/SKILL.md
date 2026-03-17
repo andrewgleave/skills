@@ -35,24 +35,22 @@ Voice is the foundation. All copy decisions — what to say, how to say it, what
 out — flow from a clear understanding of who this product is, who it's for, and how it
 should sound. Without a defined voice, copy becomes inconsistent and the product loses coherency.
 
-**Search for an existing voice definition.** Check for any of the following:
+**Search for an existing voice definition.** Check for:
 
-- A `CLAUDE.md`, `AGENTS.md`, or similar project configuration file that defines voice and/or tone
+- A `CLAUDE.md`, `AGENTS.md`, or similar project config that defines voice and/or tone
 - A style guide, design system documentation, or brand guidelines
 - A word list or terminology reference
 
-**If a voice definition exists**, use it as the lens for all copy work. Confirm it still
-feels consistent with the copy you're being asked to work on. If it doesn't, flag the
-drift.
+**If a voice definition exists**, use it as the lens for all copy work. If the copy you're
+working on drifts from it, flag the inconsistency.
 
-**If no voice definition exists**, evaluate the existing copy to infer the current voice.
-Look for patterns: is the language formal or casual? Technical or plain? Warm or
-matter-of-fact? If the existing copy is inconsistent or there isn't enough to infer from,
-help the user establish a voice before writing anything.
+**If no voice definition exists**, infer the current voice from existing copy. Look for
+patterns: formal or casual? Technical or plain? Warm or matter-of-fact? If the copy is
+inconsistent or insufficient to infer from, help the user establish a voice before writing.
 
 #### Establishing voice through conversation
 
-Walk the user through these questions. The answers shape everything that follows.
+Walk the user through these questions:
 
 1. **What does the product do and who is it for?** A banking app for professionals and a
    savings app for kids serve similar purposes but should sound completely different. The
@@ -61,27 +59,22 @@ Walk the user through these questions. The answers shape everything that follows
 2. **Why do people use it, and where?** Someone using a health app during a crisis needs
    calm clarity. Someone browsing a game at home can handle playfulness. The context of use
    — physical environment, emotional state, competing attention — shapes how much text
-   people can absorb and what tone they need and which voice is appropriate.
+   people can absorb and what tone is appropriate.
 
-3. **Imagine the product as a person. What personality traits make them unique?** Encourage
-   the user to brainstorm freely — smart, playful, calm, authoritative, warm, no-nonsense —
-   then group similar words into themes. Discard traits that are table stakes ("not
-   confusing") and keep the ones that genuinely differentiate the product's personality.
-   Aim for 3–4 key qualities that define the voice.
+3. **Imagine the product as a person. What 3–4 personality traits make them unique?**
+   Brainstorm freely, group similar words into themes, discard table-stakes traits ("not
+   confusing"), and keep the ones that genuinely differentiate the product's personality.
 
 4. **Look for productive tensions.** The best voice definitions have qualities that push
-   against each other in useful ways. "Friendly" and "concise" create a tension that helps
-   modulate tone — if you add a word for friendliness, you sacrifice some brevity, and vice
-   versa. These tensions become the dials you turn when adjusting tone for different
-   situations.
+   against each other. "Friendly" and "concise" create a useful tension — these become the
+   dials you turn when adjusting tone for different situations.
 
-5. **Capture it.** Suggest the user write the voice definition somewhere durable — a
-   `CLAUDE.md`, a design doc, a style guide — so it persists across sessions and
-   contributors. A word list pairs well with this and helps prevent terminology drift.
+5. **Capture it.** Suggest the user persist the voice definition somewhere durable
+   (`AGENTS.md`, `CLAUDE.md` or style guide document) so it persists across sessions. A word list pairs well with this and should be stored in the same file.
 
 ### Step 2: Evaluate the request
 
-With the voice established, identify what kind of copy work is needed:
+Identify what kind of copy work is needed:
 
 - **New copy**: Writing from scratch for a screen, flow, or component.
 - **Review**: Evaluating existing copy for clarity, consistency, and tone.
@@ -98,26 +91,24 @@ For every piece of copy, work in this order:
 1. **Does it sound like the voice?** Read it against the 3–4 qualities. If you read it
    aloud, would you recognise it as coming from this product?
 2. **Which qualities need dialing up or down for this situation?** Think of each voice
-   quality as a dial. A celebratory moment turns up warmth; an error turns up clarity.
+   quality as a dial. A celebratory moment turns up warmth; an error turns up clarity and
+   dials back friendliness.
 3. **Apply the core principles** (purpose, anticipation, context, empathy — detailed below).
-4. **Apply the craft rules** (remove filler, avoid repetition, be specific — detailed
-   below).
+4. **Apply the craft rules** (remove filler, avoid repetition, be specific — detailed below).
 
-The ordering here is deliberate and encodes a precedence chain: **clarity > voice >
-craft rules.** Clarity always wins — if voice gets in the way of someone understanding
-what to do, strip it back. Voice comes next — it shapes how things sound, and a craft
-rule should never cut a word or restructure a phrase in a way that undermines the
-established voice. Craft rules are voice-filtered heuristics, not absolutes. Always
-cross-check craft edits against the voice before committing them.
-
-When reviewing copy across multiple screens or files, flag terminology inconsistencies and
-suggest word list entries for new, missing or ambiguous terms.
+The ordering is deliberate and encodes a precedence chain: **clarity > voice > craft
+rules.** Clarity always wins — if voice gets in the way of someone understanding what to
+do, strip it back. Voice comes next — it shapes how things sound, and a craft rule should
+never cut a word or restructure a phrase in a way that undermines the established voice.
+Craft rules are voice-filtered heuristics, not absolutes. Always cross-check craft edits
+against the voice before committing them.
 
 ### Step 4: Deliver changes
 
-Provide specific rewrites inline — show the original, then the rewrite, with a brief
-rationale tied to the voice and principles. Prioritise changes that confuse or block users
-before polish. The user should be able to review the changes and approve or reject them.
+Work through the copy element by element — title, body, buttons, labels — showing the
+original, then the rewrite, with a brief rationale tied to voice and principles. Prioritise
+changes that confuse or block users before polish. When reviewing across a flow, flag
+terminology inconsistencies and suggest word list entries at the end.
 
 ---
 
@@ -134,7 +125,7 @@ can turn up or down depending on the moment:
 - Celebrating a milestone? Turn up warmth, dial back brevity.
 - Reporting an error? Turn up clarity and helpfulness, dial back friendliness.
 - Onboarding a new user? Balance helpfulness with warmth.
-- Confirming a destructive action? Turn up direct, keep calm and concise.
+- Confirming a destructive action? Turn up directness, keep calm and concise.
 
 ### Applying tone in practice
 
@@ -155,126 +146,96 @@ and let clarity lead. The precedence chain from Step 3 applies: clarity first, a
 
 ## Core principles
 
-These four principles — Purpose, Anticipation, Context, Empathy — form a framework for
-thinking about what to write, how to write it, and when. They apply through the lens of
-your voice.
+Purpose, Anticipation, Context, Empathy — a framework for what to write, how to write it,
+and when. Apply through the lens of your voice.
 
 ### 1. Purpose
 
-Every screen, every message, every label exists to help someone do something or understand
-something. Before writing, answer: **what is the single most important thing the person
-needs to know right now?**
+Before writing, answer: **what is the single most important thing the person needs to know
+right now?**
 
-- **Use information hierarchy to signal what matters most.** Headlines and buttons carry the
-  primary message. Supporting text fills in detail. People often read headers and buttons
-  first — if someone reads only those, they should understand the situation.
-- **Know what to leave out.** If information doesn't serve the purpose of this moment, move
-  it elsewhere or cut it. When a screen is trying to do too much, go back to its purpose
-  and strip away everything that doesn't serve it.
-- **Have a purpose for every screen in a flow.** Define the purpose of the entire flow and
-  each screen within it. This prevents redundant steps and keeps things brief.
-- **Tell people the purpose — it's not a secret.** When introducing a feature, tell them
-  why it exists and why it matters to them using the voice and tone as appropriate
-  to the situation.
+- **Use information hierarchy.** Headlines and buttons carry the primary message; supporting
+  text fills in detail. If someone reads only headers and buttons, they should understand
+  the situation.
+- **Cut what doesn't serve this moment.** Move it elsewhere or remove it. When a screen
+  tries to do too much, return to its purpose and strip away everything else.
+- **Tell people the purpose.** When introducing a feature, tell them why it exists and why
+  it matters to them.
 
 ### 2. Anticipation
 
 Think of the interface as a conversation. In any good conversation there's a natural back
 and forth — listening, responding, anticipating what the other person needs to hear next.
 
-- After telling someone about a problem, tell them how to fix it.
-- After asking someone to do something, make it obvious how to do it.
-- After someone completes something, acknowledge it and point forward.
-- **Lead with the "why".** Put the benefit or reason before the instruction. Structure
-  as: "To [benefit], [instruction]." "To get reservation updates, enter your phone number"
-  and "To keep your streak, solve today's crossword" both beat the reverse — front-loading
-  the motivation makes the instruction feel like a reasonable ask instead of a demand.
+- After telling someone about a problem, tell them how to fix it. "Can't connect to
+  Wi-Fi" → "Can't connect to Wi-Fi. Check your connection and try again."
+- After asking someone to do something, make it obvious how to do it. "Verify your
+  identity" → "Verify your identity" with a clear button or link to start the process.
+- After someone completes something, acknowledge it and point forward. "Password changed"
+  → "Password changed. You can now sign in with your new password."
+- **Lead with the "why".** Put the benefit or reason before the instruction: "To [benefit],
+  [instruction]." Front-loading motivation makes the instruction feel like a reasonable ask
+  instead of a demand.
 
 ### 3. Context
 
-People use products in wildly different circumstances — on a busy train, mid-conversation,
-one-handed, in a crisis, at 2am. The usage context shapes the writing
+People use products in wildly different circumstances. The usage context shapes the writing.
 
-- **Think outside the app.** Consider the physical and emotional situation. Someone getting
-  a health alert needs calm clarity; someone mid-exercise needs ultra-brief text they can
-  read at a glance.
+- **Think outside the app.** Consider the physical and emotional situation.
 - **Match density to available attention.** Mid-task text should be ultra-brief. Setup flows
-  can afford a bit more. Bigger screens require brevity too, because text must be large for
-  people to see it from a distance.
+  can afford more.
 - **Timing matters.** Show information when it's relevant, not before. Place instructions
-  where the person is looking — if they're focused on a camera viewfinder, overlay the
-  instruction near their focal point.
-- **Write for the device.** Screen size, input method, and usage patterns differ across
-  devices and media. Describe gestures correctly — don't say "click" on a touch device. Consider
-  that phones and watches offer personalisation but demand brevity; shared screens like TVs
-  may be seen by multiple people.
+  where the person is looking.
+- **Write for the device.** Describe gestures correctly ("tap" not "click" on touch). Phones
+  demand brevity; shared screens (TVs) need large, scannable text.
 
 ### 4. Empathy
 
-You're writing for everyone who might use this product — different abilities, languages,
-cultures, levels of technical fluency, and emotional states.
+Write for everyone who might use this product — different abilities, languages, cultures,
+technical fluency, and emotional states.
 
-- **Use plain, direct language.** Avoid jargon, idioms, and culturally specific references
-  that may not translate.
+- **Use plain, direct language.** Avoid jargon, idioms, and culturally specific references.
 - **Design for accessibility from the start.** Labels, descriptions, and alt text aren't
-  afterthoughts — for some people, they're the entire experience. Every interactive element
-  and every meaningful visual needs a thoughtful text label (see patterns reference for
-  detailed guidance).
-- **Avoid unnecessary references to gender, age, or ability.** Use inclusive, neutral
-  language.
-- **Consider localisation.** Text expands and contracts across languages. Some languages
-  read right-to-left. Abbreviations work differently. Your UI needs to accommodate these
-  changes — design short copy, not compressed long copy.
+  afterthoughts — they're the entire experience for some people. See patterns reference for
+  detailed guidance.
+- **Use inclusive, neutral language.** Avoid unnecessary references to gender, age, or
+  ability.
+- **Consider localisation.** Write short copy, not compressed long copy. Account for text
+  expansion and RTL languages.
 
 ---
 
 ## Writing craft
 
-These are the practical editing moves that tighten copy. Apply them after you've confirmed
-the voice and tone are right.
+Practical editing moves that tighten copy. Apply after confirming voice and tone are right.
 
 ### Remove filler words
 
 Interface text has no minimum word count. Every word must earn its place. But before cutting
 a word, check whether it's doing voice work. A word that's "filler" by general craft rules
-may be load-bearing for the voice — "yet" in "Nothing here yet" carries warmth and calm in
-a product whose voice values those qualities, and removing it makes the empty state blunter.
-The test isn't just "does the meaning change?" but also "does the tone change, and is that
-tone intentional?"
+may be load-bearing for the voice — "yet" in "Nothing here yet" carries warmth and calm,
+and removing it makes the empty state blunter. **The test:** remove the word; if neither
+meaning nor intentional tone changes, cut it.
 
-- **Adverbs and adjectives**: "Simply enter your license plate" → "Enter your license
-  plate." Words like "simply," "quickly," "easily," "just", "successfully", "soon" often promise
-  something about the person's experience that you can't guarantee. However, a word
-  that genuinely clarifies behaviour or carries intentional tone earns its place: "Feed your
-  pets automatically" tells you something "Feed your pets" doesn't, and a softening word like
-  "yet" may serve the voice even though it adds no literal meaning. The test: does the word
-  add meaning or intentional tone in this context, or is it filler?
-- **Interjections**: "Uh oh!", "Oops!", "Oh no!" in error messages can sound like you're
-  not taking the problem seriously. Cut them.
-- **Pleasantries**: "Sorry" and "please" can sound insincere in automated messages. Use
-  them only when they genuinely add warmth, not as padding.
-- **Unnecessary punctuation**:
-  - **Exclamation marks** should be rare. Reserve them for genuinely celebratory moments.
-  - **Hyphens and dashes** (en dash, em dash) are almost never appropriate in interface
-    copy. They add visual clutter and interrupt scanning. If you're tempted to use a dash
-    to set off a phrase or important information, break it into a separate line or sentence
-    instead. Interface text should be scannable.
-  - **Ellipsis** should only be used to indicate a process in progress or continuation
-    (e.g., "Loading..." or "Searching..."), not as a trailing thought or for effect.
-
-**The test**: read the sentence without the word. If neither the meaning nor the
-intentional tone changes, remove it.
+- **Adverbs/adjectives**: "Simply enter your license plate" → "Enter your license plate."
+  Words like "simply," "quickly," "easily," "just," "successfully" often promise something
+  you can't guarantee. Keep words that genuinely clarify ("Feed your pets automatically").
+- **Interjections**: "Oops!", "Uh oh!" in errors trivialise the problem. Cut them.
+- **Pleasantries**: "Sorry" and "please" sound insincere in automated messages. Use only
+  when they genuinely add warmth.
+- **Punctuation**:
+  - **Exclamation marks**: rare. Reserve for genuinely celebratory moments.
+  - **Dashes** (en/em): avoid in interface copy. They interrupt scanning. Break into
+    separate lines or sentences instead.
+  - **Ellipsis**: only for processes in progress ("Loading..."), not trailing thoughts.
 
 ### Avoid repetition
 
-Saying the same thing twice in different words is filler. Combine overlapping ideas into one
-clear statement.
+Combine overlapping ideas into one clear statement. Each element on screen should add new
+information. When headline and body say the same thing in different words, collapse them.
 
 "We're running late. Your delivery driver won't make it on time. They'll be there in 10
 minutes." → "Delivery delayed 10 minutes. Check the app for your driver's location."
-
-When headline and body say the same thing in different words, collapse them. Each element
-on screen should add new information.
 
 ### Be specific, not vague
 
@@ -285,76 +246,53 @@ on screen should add new information.
 
 ### Keep a word list
 
-Decide what you call things and stick to it. If you call it an "alias" on one screen, don't
-call it a "username" on another.
+Decide what you call things and stick to it. If it's "alias" on one screen, don't use
+"username" on another. A word list is a simple table: **Use** / **Don't use** /
+**Definition**. Button labels are especially good entries — if "Next" advances through a
+flow, use "Next" everywhere.
 
-A word list is a simple table: **Use** / **Don't use** / **Definition**. It prevents
-terminology drift and helps anyone working on the product write consistently. Button labels
-are especially good word list entries — if "Next" advances through a flow, use "Next"
-everywhere, not "Continue" on one screen and "Proceed" on another.
+### Pronouns and perspective
 
-Start small. Add a word at a time. As the list grows, it becomes a resource that defines how
-the product sounds. The list should exist as part of the product's documentation and
-updated as the product evolves.
-
-### Use possessive pronouns sparingly
-
-"Favorites" conveys the same message as "Your Favorites" and is more succinct. If you do use
-possessive pronouns, be consistent and try not to switch perspectives. Avoid "we" — it's
-often unclear who "we" refers to, and in error messages ("We're having trouble loading this
-content") it obscures what actually happened. "Unable to load content" is clearer.
+"Favorites" conveys the same message as "Your Favorites." Avoid "we" — it obscures what
+actually happened ("We're having trouble..." → "Unable to load content").
 
 ### Sweat the details
 
-Correct spelling, grammar, and punctuation make a product feel polished and trustworthy.
-Inconsistent capitalisation, stray punctuation, or typos erode confidence — especially in
-moments where trust matters (payments, permissions, health data).
+Correct spelling, grammar, and punctuation build trust. Adopt capitalisation rules aligned
+with the voice (title case = formal, sentence case = casual) and apply consistently. Write
+for the space available — if copy needs to be short, write a short sentence, don't compress
+a long one.
 
-Adopt capitalisation rules that align with the voice, then apply them consistently. Title
-case reads as formal; sentence case reads as casual. Choose a style for each UI element type
-and use it throughout.
+### Write for dynamic content
 
-Write for the space available. Buttons, notification titles, tooltips, and labels all have
-limited screen real estate. If copy needs to be short, write a short sentence — don't
-compress a long one.
+Templated strings (`"${count} items selected"`) are interface copy too. Write them so every
+possible output reads naturally:
+
+- **Handle zero, one, and many.** "No results," "1 result," "24 results" — not a single
+  template that produces "0 results found."
+- **Read it with real values.** Substitute short and long names, small and large numbers.
+  "Welcome back, Christopher-Montgomery!" might break layout; "3 seconds ago" and "2 days
+  ago" should both read naturally.
+- **Keep templates simple.** If a string needs complex branching to read well, the design
+  may be asking too much of a single element.
 
 ### Build language patterns
 
-Consistency builds familiarity. When the same type of situation always uses the same
-structure, the product feels cohesive and intuitive. Define patterns for common moments —
-how flows begin ("Get Started"), how they advance ("Next" or "Continue" — pick one), how
-they end ("Done"). Return to these patterns every time.
+Define patterns for common moments — how flows begin ("Get Started"), advance ("Next" or
+"Continue" — pick one), and end ("Done"). Use them consistently.
 
 ---
 
 ## The simplest test
 
 Read your writing out loud. If it sounds like how you'd explain something to a friend —
-clear, natural, no filler — it's probably good. If it sounds like a robot, verbose, inconsistent, a legal
+clear, natural, no filler — it's probably good. If it sounds like a robot, a legal
 document, or an essay, keep refining.
 
 ---
 
 ## Patterns reference
 
-For detailed guidance on specific interface patterns — alerts, errors, empty states,
-onboarding flows, notifications, accessibility labels, destructive actions, buttons, and
-instructional copy — see `references/patterns.md`.
-
----
-
-## Sources and further reading
-
-This skill draws on:
-
-- [Apple HIG: Writing](https://developer.apple.com/design/human-interface-guidelines/writing/)
-- [Apple HIG: Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts/)
-- WWDC22: [Writing for Interfaces](https://developer.apple.com/videos/play/wwdc2022/10037)
-  — the PACE framework (Purpose, Anticipation, Context, Empathy)
-- WWDC24: [Add Personality to Your App Through UX Writing](https://developer.apple.com/videos/play/wwdc2024/10140)
-  — voice/tone exercises, the dial metaphor
-- WWDC25: [Make a Big Impact with Small Writing Changes](https://developer.apple.com/videos/play/wwdc2025/404)
-  — filler words, repetition, lead with the why, word lists
-- WWDC19: [Writing Great Accessibility Labels](https://developer.apple.com/videos/play/wwdc2019/254)
-  — context-driven labelling, verbosity as a deliberate choice
-- [Apple Style Guide](https://help.apple.com/applestyleguide/)
+For detailed guidance on alerts, errors, empty states, onboarding, notifications,
+accessibility labels, destructive actions, buttons, and instructional copy — see
+`references/patterns.md`.
