@@ -1,4 +1,4 @@
-# cleanser
+# cleanse
 
 Review and improve the readability of code, making it easier to follow and understand.
 

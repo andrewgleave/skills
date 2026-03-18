@@ -1,5 +1,5 @@
 ---
-name: cleanser
+name: cleanse
 description: >
   Review code for readability, then simplify it to be easy to follow and understand.
   Use this skill when the user wants to simplify code, improve readability, clean up
