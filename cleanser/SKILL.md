@@ -1,6 +1,7 @@
 ---
-name: simplify
+name: cleanser
 description: >
+  Review code for readability, then simplify it to be easy to follow and understand.
   Use this skill when the user wants to simplify code, improve readability, clean up
   for handoff, make code skimmable, reduce complexity, refactor for clarity, strip
   boilerplate, prepare code for future maintainers, or make a codebase easier to pick
@@ -20,6 +21,7 @@ If the user specified files or directories, pass those to the sub-agent. If not,
 ## Goal
 
 Make this code trivially easy to pick up cold. Someone opening this file in six months should understand what it does in seconds.
+All changes should preserve the original functionality and behavior.
 
 ## What to look for
 
