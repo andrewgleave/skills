@@ -4,4 +4,5 @@ Custom agent skills based on AgentSkills specification at https://agentskills.io
 
 - **critical-reasoning** - Apply Popperian critical rationalism to evaluate reasoning, identify errors, and refine understanding
 - **cleanse** - Improve the readability of code, making it easier to follow and understand.
+- **5-steps** - Elon Musk's 5-Step Engineering Process. Challenges requirements, removes unnecessary work, and simplifies design before writing code.
 - **writing-for-interfaces** - Write and review interface copy for clarity, purpose, and consistency. Based on Apple's Human Interface Guidelines (HIG) and WWDC sessions on writing for interfaces.

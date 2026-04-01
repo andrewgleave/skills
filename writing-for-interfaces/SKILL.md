@@ -11,6 +11,7 @@ description: >
   interface copy review is implied. Do NOT trigger for content marketing, blog posts, app
   store listings, API docs, brand guides, cover letters, or interview questions — this is a
   technical writing skill for interface language.
+context: fork
 ---
 
 # Writing for Interfaces
