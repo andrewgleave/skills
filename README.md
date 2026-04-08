@@ -6,3 +6,4 @@ Custom agent skills based on AgentSkills specification at https://agentskills.io
 - **cleanse** - Improve the readability of code, making it easier to follow and understand.
 - **5-steps** - Elon Musk's 5-Step Engineering Process. Challenges requirements, removes unnecessary work, and simplifies design before writing code.
 - **writing-for-interfaces** - Write and review interface copy for clarity, purpose, and consistency. Based on Apple's Human Interface Guidelines (HIG) and WWDC sessions on writing for interfaces.
+- **navvy** - Diagnose a codebase through its git history before reading any code. Surfaces churn hotspots, bus factor risks, bug clusters, velocity trends, and firefighting patterns.
