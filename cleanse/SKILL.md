@@ -12,11 +12,9 @@ description: >
   this code quickly next time I open it".
 ---
 
-**Important** — Spawn a sub-agent to perform this review. Pass it only these instructions and the target files. The review is most effective when the agent starts with a clean context window.
-
 ## Scope
 
-If the user specified files or directories, pass those to the sub-agent. If not, ask what they'd like you to review before proceeding.
+If the user specified files or directories, review those. If not, ask what they'd like you to review before proceeding.
 
 ## Goal
 
